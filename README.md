@@ -1,1 +1,1 @@
-https://adamkaczorowski938.github.io/java/index.html
+https://adamkaczorowski938.github.io/JavaScript/index.html
