@@ -1,0 +1,37 @@
+<html>
+    <textarea>
+        <html>
+<head>
+    <script type="text/javascript">
+    function router(Częstotliwość_pracy, Cena, Nazwa ,ilośc_portów) { 
+        this.Częstotliwość_pracy=Częstotliwość_pracy;
+        this.Cena=Cena;
+        this.Nazwa=Nazwa;
+        this.ilośc_portów=ilośc_portów;
+    } 
+    router.prototype.wypisz = function () { 
+        alert(this.Częstotliwość_pracy + ' ' + this.Cena + ' ' + this.Nazwa + ' ' + this.ilośc_portów);
+    };
+
+    var router1 = new router("2.4 / 5 GHz" , "140.99 zł" , "AC1200" , "5"); 
+    var router2 = new router('5GHz' , '198.99 zł' , 'AC1300' , "6");
+    var router3 = new router('2.4 GHz' , '99.99 zł' , 'Cisco ISR4321K9' , "4");
+
+    document.write("dostęp do właściwości"+"<br>");
+
+    document.write("router pierwszy" + " " + router1.Częstotliwość_pracy + " " + router1.Cena + " " + router1.Nazwa   + "    Ilość portów:" + router1.ilośc_portów + "<br>");
+    document.write("router drugi" + " " + router2.Częstotliwość_pracy + " " + router2.Cena + " " + router2.Nazwa   + "    Ilość portów: " + router2.ilośc_portów + "<br>");
+    document.write("router trzeci" + " " + router3.Częstotliwość_pracy + " " + router3.Cena + " " + router3.Nazwa   + "      Ilość portów:" + router3.ilośc_portów + "<br>");
+    
+    router1.wypisz(); 
+    router2.wypisz();
+    router3.wypisz();
+    </script>
+</head>
+<body>
+    <br>
+    programowanie obiektowe
+</body>
+</html>
+    </textarea>
+</html>
