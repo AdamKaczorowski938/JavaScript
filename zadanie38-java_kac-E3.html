@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<style>
+ #demo_kaczorowski {
+ color: red;
+ font-size: 40px;
+ }
+</style>
+
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Kaczorowski Z38</title>
+</head
+<html>
+ <body>
+ <div style="color: red; font-size: 1cm;text-align: center;">Kaczorowski</div><br>
+ <div style="color: green; font-size: 12mm;"> Rozdzielczość ekranu/monitora oznacza całkowitą liczbę pikseli (punktów), jakie matryca urządzenia jest w stanie wyświetlić w pionie i poziomie (np. 1920x1080). Określa ona maksymalną przestrzeń roboczą i szczegółowość obrazu dostępną na danym sprzęcie.</div><br>
+ <div style="color: blue; font-size: 50px;"> Szerokość/wysokość ekranu przeglądarki (tzw. viewport) oznacza aktualny wymiar okna roboczego, w którym wyświetlana jest strona internetowa. Wartości te mogą być mniejsze od rozdzielczości monitora, jeśli okno przeglądarki nie jest zmaksymalizowane lub gdy użytkownik korzysta z paska bocznego.</div><br>
+<p id="demo_kaczorowski"></p>
+<script>
+
+
+ var w = window.innerWidth;
+ var h = window.innerHeight;
+ var x = document.getElementById("demo_kaczorowski");
+    x.innerHTML = "szerokość przeglądarki: " + w + ", wysokość: " + h + ".";
+
+   document.write("<font color=silver size=6>Twoja rozdzielczość ekranu to:</font>");
+   document.write("<font color=silver size=6>"+screen.width+"</font>");
+   document.write("<font color=silver size=6> na </font>");
+   document.write("<font color=silver size=6>"+screen.height+"</font>")
+ </script> 
+</body>
+</html>
+<!-- Kaczorowski Z38_E3_JS -->
