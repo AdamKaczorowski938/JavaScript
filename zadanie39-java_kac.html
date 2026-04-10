@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Kaczorowski Z39_JS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<html>
+<body>
+    <b><font color="green" size="7">MENU</font><br><br><br><br>
+    <font color="red" size="6">1-CZERWONY</font><br><br>
+    <font color="blue" size="6">2-NIEBIESKI</font><br><br></b>
+
+
+    <input type="button" name="Kaczorowski" value="Oblicz" onclick="fun_kac()" />
+    <script>
+        function fun_kac() {
+            var x_kac = prompt("Podaj kolor", "");
+            if(x_kac == 1 || x_kac.toLowerCase() == "czerwony") {
+                document.write('<h1 style="color:red;">wczytałeś kolor czerwony</h1><br/>');
+            }
+            else if(x_kac == 2 || x_kac.toLowerCase() == "niebieski") {
+                document.write('<h6 style="color:blue;">wczytałeś kolor niebieski</h6><br/>');
+            }
+        }
+    </script>
+</body>
+</html>
+<!-- Kaczorowski Z39_JS -->
