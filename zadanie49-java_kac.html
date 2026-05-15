@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+ 
+    <title>z 49 kacz JS</title>
+</head>
+<body>
+    <div style="color:red;font-size:50px;">
+ <script language="JavaScript">
+    do{
+        var a_kac=parseFloat(prompt("bok a=",""));
+        var b_kac=parseFloat(prompt("bok b=",""));
+        var c_kac=parseFloat(prompt("bok c=",""));
+        document.write("sprawdzam warunkidla trójkata dla wyczytanych danych"+"<br>");
+    }
+    while(!((a_kac>0)&&(b_kac>0)&&(c_kac>0)&&(a_kac+b_kac>c_kac)&&(a_kac+c_kac>b_kac)&&c_kac+b_kac>a_kac));
+    document.write("wyrok: trójkąt się zamyka orazboki sa dodatnie");
+    </script>
+</body>
+</html>
